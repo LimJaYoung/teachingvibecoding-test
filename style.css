@@ -712,7 +712,7 @@ a {
 }
 
 .teamproject-box {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -810,7 +810,7 @@ a {
 }
 
 .desktop-section-teamproject .left-box {
-  width: 547px;
+  width: 60%;
   display: flex;
   flex-direction: column;
   gap: 28px;
@@ -2015,6 +2015,38 @@ a {
 
   .teamproject-img-right {
     width: 40%;
+  }
+
+  .desktop-section-teamproject .project-name {
+    width: auto;
+    height: 41px;
+    flex-shrink: 0;
+  }
+
+  .desktop-section-teamproject .project-name-text {
+    font-family: var(--font-pp-editorial-new);
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 40.96px;
+    letter-spacing: -0.96px;
+    color: var(--color-black);
+    width: auto;
+  }
+
+  .desktop-section-teamproject .big-caption-text {
+    font-size: 28px;
+  }
+
+  .desktop-section-teamproject .small-caption-text {
+    font-size: 28px;
+  }
+
+  .desktop-section-teamproject .teamproject-list .big-caption {
+    width: 30%;
+  }
+
+  .desktop-section-teamproject .teamproject-list .project-name {
+    width: 80%;
   }
 
   .desktop-section-uiux {
