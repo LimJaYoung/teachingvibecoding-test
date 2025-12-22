@@ -1185,7 +1185,7 @@ a {
 .desktop-section-contact .section-deco-title {
   position: absolute;
   left: 0;
-  top: -22%;
+  top: -43%;
   width: 254.29px;
   background-color: var(--color-accent-sub);
   transform: rotate(-13deg);
@@ -1651,7 +1651,7 @@ a {
 
   .desktop-section-contact .section-deco-title {
     left: 0;
-    top: -22%;
+    top: -43%;
     transform: rotate(-13deg);
     padding: 20px 40px 20px;
   }
