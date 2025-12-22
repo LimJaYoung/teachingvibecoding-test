@@ -712,12 +712,12 @@ a {
 }
 
 .teamproject-box {
-  width: 100%;
+  width: 80%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 84px;
   align-items: center;
-  margin-top: 80px;
 }
 
 .small-title-box {
