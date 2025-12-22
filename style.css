@@ -804,7 +804,7 @@ a {
   padding: 57px 80px;
   display: flex;
   justify-content: space-between;
-  gap: 250px;
+  gap: 0;
   align-items: flex-start;
   box-sizing: border-box;
 }
