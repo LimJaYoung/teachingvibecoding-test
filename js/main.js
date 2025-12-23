@@ -98,7 +98,7 @@ gsap.timeline({
     start: "80% 80%",
     end: "bottom 50%",
     scrub: 1,
-    markers: true
+    //markers: true
   }
 })
 .to(line7Path, {

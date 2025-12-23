@@ -39,6 +39,30 @@
     margin: 0 auto;
   }
 
+  /* line-7 (≤1650px) - project 섹션 line 위치 조정용 */
+  .desktop-section-project .line-7 {
+    left: 290px;
+    top: 787.6px;
+    width: 1014px;
+    height: 10px;
+  }
+
+  /* line-3 (≤1650px) - about 섹션 line 위치 조정용 */
+  .desktop-section-about .line-3 {
+    left: 310px;
+    top: 712px;
+    width: 950px;
+    height: 15px;
+  }
+
+  /* line-4 (≤1650px) - about 섹션 line 위치 조정용 */
+  .desktop-section-about .line-4 {
+    left: 310px;
+    top: 900px;
+    width: 253px;
+    height: 85px;
+  }
+
   /* desktop-section-skill (≤1200px) */
   .desktop-section-skill {
     width: 100%;
@@ -52,6 +76,22 @@
   .desktop-section-skill .skill-frame {
     width: 100%;
     position: relative;
+  }
+
+  /* line-7 (≤1024px) - project 섹션 line 위치 조정용 */
+  .desktop-section-project .line-7 {
+    left: 364.4px;
+    top: 787.6px;
+    width: 1014px;
+    height: 10px;
+  }
+
+  /* line-7 (≤1200px) - project 섹션 line 위치 조정용 */
+  .desktop-section-project .line-7 {
+    left: 364.4px;
+    top: 787.6px;
+    width: 1014px;
+    height: 10px;
   }
 
   /* skill-icon 위치를 부모 프레임 중앙 기준으로 % 단위로 변경 */
@@ -283,6 +323,62 @@
     transform: translateX(-50%) rotate(-3deg);
   }
 
+  /* line-1 (≤1440px) - hero 섹션 line 위치 조정용 */
+  .desktop-section-hero .line-svg.line-1 {
+    left: 209px;
+    top: 654px;
+    width: 264px;
+    height: 730px;
+  }
+
+  /* line-2 (≤1440px) - hero 섹션 line 위치 조정용 */
+  .desktop-section-hero .line-svg.line-2 {
+    left: 446px;
+    top: 1357px;
+    width: 46px;
+    height: 39px;
+  }
+
+  /* line-3 (≤1440px) - about 섹션 line 위치 조정용 */
+  .desktop-section-about .line-3 {
+    left: 187px;
+    top: 712px;
+    width: 950px;
+    height: 15px;
+  }
+
+  /* line-4 (≤1440px) - about 섹션 line 위치 조정용 */
+  .desktop-section-about .line-4 {
+    left: 181px;
+    top: 900px;
+    width: 253px;
+    height: 85px;
+  }
+
+  /* line-5 (≤1440px) - about 섹션 line 위치 조정용 */
+  .desktop-section-about .line-5 {
+    left: 686px;
+    top: 1163px;
+    width: 30px;
+    height: 250px;
+  }
+
+  /* line-6 (≤1440px) - about 섹션 line 위치 조정용 */
+  .desktop-section-about .line-6 {
+    left: 695px;
+    top: 1394px;
+    width: 33px;
+    height: 29px;
+  }
+
+  /* line-7 (≤1440px) - project 섹션 line 위치 조정용 */
+  .desktop-section-project .line-7 {
+    left: 6%;
+    top: 85%;
+    width: 84%;
+    height: 10px;
+  }
+
   /* desktop-section-project (≤1440px) */
   .desktop-section-project {
     width: 100%;
@@ -325,6 +421,11 @@
 
   .desktop-section-teamproject .left-box {
     width: 55%;
+  }
+
+  /* left-box 텍스트 래퍼 - 모든 형제 공통 적용 */
+  .desktop-section-teamproject .teamproject-list .left-box .text-box {
+    width: 100%;
   }
 
   .desktop-section-teamproject .teamproject-img-right {
@@ -382,6 +483,26 @@
     margin: 0 auto;
   }
   .hero-main-title{width: 64%}
+
+  .desktop-section-project .sub-title-text {
+    font-size: 57px;
+  }
+
+  /* line-1 (≤1200px) - hero 섹션 line 위치 조정용 */
+  .desktop-section-hero .line-svg.line-1 {
+    left: 254px;
+    top: 705px;
+    width: 264px;
+    height: 730px;
+  }
+
+  /* line-2 (≤1200px) - hero 섹션 line 위치 조정용 */
+  .desktop-section-hero .line-svg.line-2 {
+    left: 302px;
+    top: 1311px;
+    width: 46px;
+    height: 39px;
+  }
   /* desktop-section-about (≤1200px) */
   .desktop-section-about {
     width: 100%;
@@ -390,6 +511,38 @@
   .desktop-section-about .about-inner {
     width: 95%;
     margin: 0 auto;
+  }
+
+  /* line-3 (≤1200px) - about 섹션 line 위치 조정용 */
+  .desktop-section-about .line-3 {
+    left: 65px;
+    top: 712px;
+    width: 950px;
+    height: 15px;
+  }
+
+  /* line-4 (≤1200px) - about 섹션 line 위치 조정용 */
+  .desktop-section-about .line-4 {
+    left: 51px;
+    top: 898px;
+    width: 253px;
+    height: 85px;
+  }
+
+  /* line-5 (≤1200px) - about 섹션 line 위치 조정용 */
+  .desktop-section-about .line-5 {
+    left: 536px;
+    top: 1163px;
+    width: 30px;
+    height: 250px;
+  }
+
+  /* line-6 (≤1200px) - about 섹션 line 위치 조정용 */
+  .desktop-section-about .line-6 {
+    left: 543px;
+    top: 1394px;
+    width: 33px;
+    height: 29px;
   }
 
   /* desktop-section-skill (≤1200px) */
@@ -492,7 +645,7 @@
   }
 
   .desktop-section-project .sub-title-text {
-    font-size: 58px;
+    font-size: 57px;
   }
 
   /* desktop-section-teamproject (≤1200px) */
@@ -676,6 +829,22 @@
     position: relative;
   }
 
+  /* line-1 (≤1024px) - hero 섹션 line 위치 조정용 */
+  .desktop-section-hero .line-svg.line-1 {
+    left: 112px;
+    top: 705px;
+    width: 264px;
+    height: 730px;
+  }
+
+  /* line-2 (≤1024px) - hero 섹션 line 위치 조정용 */
+  .desktop-section-hero .line-svg.line-2 {
+    left: 341px;
+    top: 1399px;
+    width: 46px;
+    height: 39px;
+  }
+
   .desktop-section-hero .hero-main-title {
     width: 1017px;
     height: 471px;
@@ -752,6 +921,38 @@
     flex-direction: column;
     gap: 64px;
     align-items: center;
+  }
+
+  /* line-3 (≤1024px) - about 섹션 line 위치 조정용 */
+  .desktop-section-about .line-3 {
+    left: 84px;
+    top: 617px;
+    width: 830px;
+    height: 15px;
+  }
+
+  /* line-4 (≤1024px) - about 섹션 line 위치 조정용 */
+  .desktop-section-about .line-4 {
+    left: 32px;
+    top: 798px;
+    width: 253px;
+    height: 85px;
+  }
+
+  /* line-5 (≤1024px) - about 섹션 line 위치 조정용 */
+  .desktop-section-about .line-5 {
+    left: 431px;
+    top: 1044px;
+    width: 30px;
+    height: 250px;
+  }
+
+  /* line-6 (≤1024px) - about 섹션 line 위치 조정용 */
+  .desktop-section-about .line-6 {
+    left: 439px;
+    top: 1283px;
+    width: 33px;
+    height: 29px;
   }
 
   .desktop-section-about .section-main-title {
@@ -2080,6 +2281,12 @@
     object-fit: contain;
   }
 
+  /* line-1, line-2 (≤768px) - 숨김 처리 */
+  .desktop-section-hero .line-svg.line-1,
+  .desktop-section-hero .line-svg.line-2 {
+    display: none;
+  }
+
   /* ============================================
      desktop-section-about (≤768px)
      ============================================ */
@@ -2285,6 +2492,14 @@
     color: var(--color-black);
   }
 
+  /* line-3, line-4, line-5, line-6 (≤768px) - 숨김 처리 */
+  .desktop-section-about .line-3,
+  .desktop-section-about .line-4,
+  .desktop-section-about .line-5,
+  .desktop-section-about .line-6 {
+    display: none;
+  }
+
   /* ============================================
      desktop-section-skill (≤768px)
      ============================================ */
@@ -2339,7 +2554,7 @@
   }
 
   .desktop-section-skill .skill-icon-5 {
-    left: 8%;
+    left: -2%;
     top: 573.5px;
     width: 101px;
     height: 94.19px;
@@ -2475,9 +2690,9 @@
   .desktop-section-project .section-title-text {
     font-family: var(--font-martian-mono);
     font-weight: 700;
-    font-size: 140px;
+    font-size: 133px;
     line-height: 140px;
-    letter-spacing: -4.2px;
+    letter-spacing: -8.2px;
     color: var(--color-black);
     margin: 0;
     padding: 0;
@@ -2531,6 +2746,11 @@
     margin: 0;
     padding: 0;
     white-space: pre-line;
+  }
+
+  /* line-7 (≤768px) - 숨김 처리 */
+  .desktop-section-project .line-7 {
+    display: none;
   }
 
   /* ============================================

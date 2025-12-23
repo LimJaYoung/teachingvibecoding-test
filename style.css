@@ -1384,7 +1384,7 @@ a {
    - project 섹션 좌상단 기준 x:364.4px, y:787.6px 부근 (project 섹션 내부 기준)
 */
 .desktop-section-project .line-7 {
-  left: 364.4px;
+  left: 20%;
   top: 787.6px;
   width: 1014px;
   height: 10px;
