@@ -225,28 +225,6 @@ a {
 /* ============================================
    hero section line SVG draw animation
    ============================================ */
-@keyframes drawLine {
-  0% {
-    stroke-dashoffset: var(--path-length);
-  }
-  100% {
-    stroke-dashoffset: 0;
-  }
-}
-
-.desktop-section-hero .line-svg.line-1 path {
-  animation: drawLine 1.5s ease-out forwards;
-  animation-play-state: paused;
-}
-
-.desktop-section-hero .line-svg.line-2 path {
-  animation: drawLine 1.5s ease-out 0.3s forwards;
-  animation-play-state: paused;
-}
-
-.desktop-section-hero.motion .line-svg path {
-  animation-play-state: running;
-}
 
 /* ============================================
    desktop-section-about
