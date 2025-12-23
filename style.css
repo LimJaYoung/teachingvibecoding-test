@@ -222,6 +222,25 @@ a {
 }
 
 /* ============================================
+   hero section line SVG draw animation
+   ============================================ */
+.desktop-section-hero .line-svg path {
+  transition: stroke-dashoffset 1.5s ease-out;
+}
+
+.desktop-section-hero .line-svg.line-1 path {
+  transition-delay: 0s;
+}
+
+.desktop-section-hero .line-svg.line-2 path {
+  transition-delay: 0.3s;
+}
+
+.desktop-section-hero.is-active .line-svg path {
+  stroke-dashoffset: 0;
+}
+
+/* ============================================
    desktop-section-about
    ============================================ */
 .desktop-section-about {
