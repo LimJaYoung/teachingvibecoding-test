@@ -146,6 +146,7 @@ a {
    desktop-section-hero
    ============================================ */
 .desktop-section-hero {
+  position: relative;
   width: var(--width-section);
   max-width: 100%;
   margin: 0 auto;
@@ -244,6 +245,7 @@ a {
    desktop-section-about
    ============================================ */
 .desktop-section-about {
+  position: relative;
   width: var(--width-section);
   max-width: 100%;
   margin: 0 auto;
@@ -576,6 +578,7 @@ a {
    desktop-section-project
    ============================================ */
 .desktop-section-project {
+  position: relative;
   width: var(--width-section);
   max-width: 100%;
   margin: 0 auto;
@@ -731,7 +734,7 @@ a {
 }
 
 .teamproject-box {
-  width: 1440px;
+  width:84%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -740,7 +743,7 @@ a {
 }
 
 .small-title-box {
-  width: 1440px;
+  width: 100%;
   max-width: 100%;
   background-color: var(--color-black);
   border-radius: 34px;
@@ -1303,873 +1306,102 @@ a {
 }
 
 /* ============================================
-   반응형 - Tablet (≤1024px)
+   SVG Line Positioning
    ============================================ */
-@media (max-width: 1024px) {
-  :root {
-    /* Width - 레이아웃용 3개만 허용 */
-    --width-container: 1024px;
-    --width-section: 960px;
-    --width-section-inner: 960px;
-  }
 
-  .desktop-header {
-    width: 960px;
-    padding: 10px 0;
-  }
-
-  .desktop-section-hero {
-    width: var(--width-section);
-    padding-top: 24px;
-    height: 1276px;
-  }
-
-  .hero-inner {
-    gap: 19px;
-  }
-
-  .hero-title-text {
-    font-size: 130px;
-  }
-
-  .hero-img {
-    left: 310px;
-    top: 522px;
-    width: 664px;
-    height: 736px;
-  }
-
-  .desktop-section-about {
-    width: var(--width-section);
-    padding-top: 320px;
-    padding-bottom: 160px;
-  }
-
-  .about-inner {
-    gap: 64px;
-  }
-
-  .section-deco-title {
-    left: -90px;
-    top: -122px;
-    padding: 20px 40px 20px;
-  }
-
-  .deco-title-text {
-    font-size: 50px;
-    line-height: 50px;
-  }
-
-  .section-title-text {
-    font-size: 180px;
-    line-height: 180px;
-  }
-
-  .paper-airplane {
-    left: 265px;
-    top: 162px;
-  }
-
-  .about-main-text {
-    gap: 72px;
-  }
-
-  .section-text-box {
-    gap: 8px;
-  }
-
-  .sub-title-text {
-    font-size: 52px;
-  }
-
-  .sub-text-content {
-    font-size: 16px;
-  }
-
-  .about-bottom-box {
-    gap: 24px;
-  }
-
-  .edu-title-text {
-    font-size: 28px;
-  }
-
-  .edu-text {
-    gap: 10px;
-  }
-
-  .edu-list-text span {
-    font-size: 20px;
-  }
-
-  .desktop-section-skill {
-    width: var(--width-section);
-    padding: 160px 0;
-  }
-
-  .skill-frame {
-    height: 1225px;
-  }
-
-  .skill-icon-1 {
-    left: 108px;
-    top: 150px;
-  }
-
-  .skill-icon-2 {
-    left: 783px;
-    top: 41px;
-  }
-
-  .skill-icon-3 {
-    left: 110px;
-    top: 544px;
-  }
-
-  .skill-icon-4 {
-    left: 752px;
-    top: 512px;
-  }
-
-  .skill-icon-5 {
-    left: 50px;
-    top: 824px;
-  }
-
-  .skill-text {
-    border-radius: 80px;
-    padding: 30px 70px 15px;
-  }
-
-  .skill-text-1 {
-    left: 294px;
-    top: 111px;
-    transform: rotate(9deg);
-  }
-
-  .skill-text-2 {
-    left: 240px;
-    top: 254px;
-    transform: rotate(3deg);
-  }
-
-  .skill-text-3 {
-    left: 263px;
-    top: 385px;
-    transform: rotate(-2deg);
-  }
-
-  .skill-text-4 {
-    left: 289px;
-    top: 509px;
-    transform: rotate(6deg);
-  }
-
-  .skill-text-5 {
-    left: 265px;
-    top: 772px;
-    transform: rotate(1deg);
-  }
-
-  .skill-text-6 {
-    left: 202px;
-    top: 772px;
-    transform: rotate(1deg);
-  }
-
-  .skill-text-7 {
-    left: 229px;
-    top: 910px;
-    transform: rotate(-2deg);
-  }
-
-  .skill-text-content {
-    font-size: 70px;
-    line-height: 60px;
-  }
-
-  .sub-text {
-    width: 100%;
-    max-width: 539px;
-  }
-
-  .about-bottom-box {
-    flex-direction: row;
-  }
-
-  .desktop-section-project {
-    width: var(--width-section);
-    padding-top: 240px;
-    padding-bottom: 0;
-  }
-
-  .desktop-section-project .project-inner {
-    gap: 64px;
-  }
-
-  .desktop-section-project .section-main-title {
-    width: 100%;
-    max-width: 1157px;
-  }
-
-  .desktop-section-project .section-deco-title {
-    left: 5%;
-    top: -51%;
-    padding: 20px 40px 20px;
-  }
-
-  .desktop-section-project .deco-title-text {
-    font-size: 50px;
-    line-height: 50px;
-  }
-
-  .desktop-section-project .section-title-text {
-    font-size: 180px;
-    line-height: 180px;
-  }
-
-  .desktop-section-project .sub-title-text {
-    font-size: 52px;
-  }
-
-  .desktop-section-project .sub-text-content {
-    width: 100%;
-    font-size: 16px;
-  }
-
-  .desktop-section-teamproject {
-    width: var(--width-section);
-    padding-top: 64px;
-    padding-bottom: 0;
-  }
-
-  .teamproject-img {
-    height: auto;
-    margin: 0 auto;
-  }
-
-  .teamproject-img-girl {
-    width: 750px;
-    height: auto;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .team-img-sun {
-    width: 182px;
-    height: auto;
-    left: 70%;
-  }
-
-  .teamproject-box {
-    gap: 64px;
-    margin-top: 64px;
-  }
-
-  .small-title-box {
-    width: 960px;
-    padding: 90px 0;
-    gap: 28px;
-  }
-
-  .small-main-title-text {
-    font-size: 120px;
-    line-height: 120px;
-  }
-
-  .small-sub-title-text {
-    font-size: 28px;
-  }
-
-  .small-sub-text-content {
-    font-size: 16px;
-  }
-
-  .teamproject-list {
-    width: 100%;
-    padding: 90px 80px;
-    gap: 64px;
-    flex-direction: column;
-    box-sizing: border-box;
-    justify-content: space-between;
-  }
-
-  .desktop-section-teamproject .left-box {
-    width: 805px;
-    gap: 36px;
-  }
-
-  .text-box {
-    width: 633px;
-    gap: 15px;
-  }
-
-  .teamproject-img-right {
-    width: 40%;
-  }
-
-  .desktop-section-uiux {
-    width: var(--width-section);
-    padding-top: 160px;
-    padding-bottom: 160px;
-  }
-
-  .uiux-inner {
-    width: 960px;
-    gap: 160px;
-  }
-
-  .desktop-section-uiux .small-title-box {
-    width: 960px;
-    padding: 90px 0;
-    gap: 28px;
-  }
-
-  .desktop-section-uiux .small-main-title-text {
-    font-size: 120px;
-    line-height: 120px;
-  }
-
-  .desktop-section-uiux .small-sub-title-text {
-    font-size: 28px;
-  }
-
-  .desktop-section-uiux .small-sub-text-content {
-    font-size: 16px;
-  }
-
-  .uiux-box {
-    width: 687px;
-    gap: 56px;
-  }
-
-  .desktop-section-uiux .list {
-    gap: 64px;
-    flex-direction: column;
-  }
-
-  .list-box {
-    width: 678px;
-  }
-
-  .desktop-section-contact {
-    width: 1024px;
-    padding-top: 280px;
-    padding-bottom: 280px;
-  }
-
-  .contact-inner {
-    width: 896px;
-    gap: 40px;
-  }
-
-  .desktop-section-contact .section-main-title {
-    width: 100%;
-    max-width: 1157px;
-  }
-
-  .desktop-section-contact .section-deco-title {
-    left: 0;
-    top: -43%;
-    transform: rotate(-13deg);
-    padding: 20px 40px 20px;
-  }
-
-  .desktop-section-contact .deco-title-text {
-    font-size: 50px;
-    line-height: 50px;
-  }
-
-  .desktop-section-contact .section-title-text {
-    font-size: 180px;
-    line-height: 180px;
-  }
-
-  .desktop-section-contact .sub-title-text {
-    font-size: 52px;
-  }
-
-  .desktop-section-contact .sub-text {
-    width: 100%;
-    max-width: 495px;
-  }
-
-  .desktop-section-contact .sub-text-content {
-    font-size: 16px;
-  }
-
-  .contact-tel {
-    width: 100%;
-    max-width: 771px;
-    padding: 35px 80px 15px;
-  }
-
-  .contact-tel-text {
-    font-size: 90px;
-    line-height: 70px;
-  }
+.line-wrap {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 10;
 }
 
-/* ============================================
-   반응형 - Mobile (≤768px)
-   ============================================ */
-@media (max-width: 768px) {
-  :root {
-    /* Width - 레이아웃용 3개만 허용 */
-    --width-container: 768px;
-    --width-section: 720px;
-    --width-section-inner: 720px;
-  }
-
-  .desktop-header {
-    width: 720px;
-    padding: 0;
-  }
-
-  .desktop-section-hero {
-    width: var(--width-section);
-    padding-top: 16px;
-    height: 1313px;
-  }
-
-  .hero-inner {
-    gap: 16px;
-  }
-
-  .hero-title-text {
-    font-size: 90px;
-  }
-
-  .hero-img {
-    left: 61px;
-    top: 61px;
-    width: 659px;
-    height: 696px;
-  }
-
-  .desktop-section-about {
-    width: var(--width-section);
-    padding-top: 180px;
-    padding-bottom: 176px;
-  }
-
-  .about-inner {
-    gap: 28px;
-  }
-
-  .section-deco-title {
-    left: -77px;
-    top: -83px;
-    padding: 20px 40px 10px;
-  }
-
-  .deco-title-text {
-    font-size: 40px;
-    line-height: 40px;
-  }
-
-  .section-title-text {
-    font-size: 140px;
-    line-height: 140px;
-  }
-
-  .paper-airplane {
-    left: 212px;
-    top: 122px;
-  }
-
-  .about-main-text {
-    gap: 64px;
-  }
-
-  .section-text-box {
-    gap: 8px;
-  }
-
-  .sub-title-text {
-    font-size: 32px;
-  }
-
-  .sub-text-content {
-    font-size: 14px;
-  }
-
-  .about-bottom-box {
-    gap: 24px;
-  }
-
-  .edu-title-text {
-    font-size: 24px;
-  }
-
-  .edu-text {
-    gap: 10px;
-  }
-
-  .edu-list-text span {
-    font-size: 18px;
-  }
-
-  .desktop-section-skill {
-    width: var(--width-section);
-    padding: 140px 0;
-  }
-
-  .skill-frame {
-    height: 880px;
-  }
-
-  .skill-icon-1 {
-    left: 106px;
-    top: 150px;
-  }
-
-  .skill-icon-2 {
-    left: 582px;
-    top: 237px;
-  }
-
-  .skill-icon-3 {
-    left: 50px;
-    top: 461px;
-  }
-
-  .skill-icon-4 {
-    left: 602px;
-    top: 611px;
-  }
-
-  .skill-icon-5 {
-    left: 52px;
-    top: 763px;
-  }
-
-  .skill-text {
-    border-radius: 80px;
-    padding: 25px 50px 20px;
-  }
-
-  .skill-text-1 {
-    left: 214px;
-    top: 151px;
-    transform: rotate(9deg);
-  }
-
-  .skill-text-2 {
-    left: 185px;
-    top: 256px;
-    transform: rotate(4deg);
-  }
-
-  .skill-text-3 {
-    left: 171px;
-    top: 359px;
-    transform: rotate(-2deg);
-  }
-
-  .skill-text-4 {
-    left: 257px;
-    top: 451px;
-    transform: rotate(5deg);
-  }
-
-  .skill-text-5 {
-    left: 201px;
-    top: 650px;
-    transform: rotate(1deg);
-  }
-
-  .skill-text-6 {
-    left: 148px;
-    top: 650px;
-    transform: rotate(1deg);
-  }
-
-  .skill-text-7 {
-    left: 201px;
-    top: 756px;
-    transform: rotate(-3deg);
-  }
-
-  .skill-text-content {
-    font-size: 45px;
-    line-height: 45px;
-  }
-
-  .section-main-title {
-    width: 100%;
-    max-width: 432px;
-  }
-
-  .sub-text {
-    width: 100%;
-    max-width: 539px;
-  }
-
-  .about-bottom-box {
-    flex-direction: column;
-    width: 100%;
-    max-width: 925px;
-  }
-
-  .edu-title {
-    width: 100%;
-  }
-
-  .edu-text {
-    width: 100%;
-  }
-
-  .desktop-section-project {
-    width: var(--width-section);
-    padding-top: 80px;
-    padding-bottom: 0;
-  }
-
-  .desktop-section-project .project-inner {
-    gap: 36px;
-  }
-
-  .desktop-section-project .section-main-title {
-    width: 100%;
-    max-width: 1157px;
-  }
-
-  .desktop-section-project .section-deco-title {
-    left: 5%;
-    top: -51%;
-    padding: 20px 40px 10px;
-  }
-
-  .desktop-section-project .deco-title-text {
-    font-size: 40px;
-    line-height: 40px;
-  }
-
-  .desktop-section-project .section-title-text {
-    font-size: 140px;
-    line-height: 140px;
-  }
-
-  .desktop-section-project .sub-title-text {
-    font-size: 32px;
-  }
-
-  .desktop-section-project .sub-text {
-    width: 100%;
-    max-width: 400px;
-  }
-
-  .desktop-section-project .sub-text-content {
-    width: 100%;
-    font-size: 14px;
-  }
-
-  .desktop-section-teamproject {
-    width: var(--width-section);
-    padding-top: 56px;
-    padding-bottom: 0;
-  }
-
-  .teamproject-img {
-    height: auto;
-    margin: 0 auto;
-  }
-
-  .teamproject-img-girl {
-    width: 600px;
-    height: auto;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .team-img-sun {
-    width: 176px;
-    height: auto;
-    left: 70%;
-  }
-
-  .teamproject-box {
-    gap: 48px;
-    margin-top: 48px;
-  }
-
-  .small-title-box {
-    width: 720px;
-    padding: 60px 0;
-    gap: 20px;
-  }
-
-  .small-main-title-text {
-    font-size: 100px;
-    line-height: 100px;
-  }
-
-  .small-sub-title-text {
-    font-size: 24px;
-  }
-
-  .small-sub-text-content {
-    font-size: 14px;
-  }
-
-  .teamproject-list {
-    width: 100%;
-    padding: 60px 57px;
-    gap: 40px;
-    flex-direction: column;
-    box-sizing: border-box;
-    justify-content: space-between;
-  }
-
-  .desktop-section-teamproject .left-box {
-    width: 620px;
-    gap: 28px;
-  }
-
-  .text-box {
-    width: 450px;
-    gap: 14px;
-  }
-
-  .teamproject-img-right {
-    width: 40%;
-  }
-
-  .desktop-section-teamproject .project-name {
-    width: auto;
-    height: 41px;
-    flex-shrink: 0;
-  }
-
-  .desktop-section-teamproject .project-name-text {
-    font-family: var(--font-pp-editorial-new);
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 40.96px;
-    letter-spacing: -0.96px;
-    color: var(--color-black);
-    width: auto;
-  }
-
-  .desktop-section-teamproject .big-caption-text {
-    font-size: 28px;
-  }
-
-  .desktop-section-teamproject .small-caption-text {
-    font-size: 28px;
-  }
-
-  .desktop-section-teamproject .teamproject-list .big-caption {
-    width: 30%;
-  }
-
-  .desktop-section-teamproject .teamproject-list .project-name {
-    width: 80%;
-  }
-
-  .desktop-section-uiux {
-    width: var(--width-section);
-    padding-top: 160px;
-    padding-bottom: 120px;
-  }
-
-  .uiux-inner {
-    width: 720px;
-    gap: 120px;
-  }
-
-  .desktop-section-uiux .small-title-box {
-    width: 720px;
-    padding: 60px 0;
-    gap: 20px;
-  }
-
-  .desktop-section-uiux .small-main-title-text {
-    font-size: 100px;
-    line-height: 100px;
-  }
-
-  .desktop-section-uiux .small-sub-title-text {
-    font-size: 24px;
-  }
-
-  .desktop-section-uiux .small-sub-text-content {
-    font-size: 14px;
-  }
-
-  .uiux-box {
-    width: 675px;
-    gap: 48px;
-  }
-
-  .desktop-section-uiux .list {
-    gap: 48px;
-    flex-direction: column;
-  }
-
-  .list-box {
-    width: 678px;
-  }
-
-  .uiux-name-box {
-    padding: 0 16px;
-  }
-
-  .desktop-section-contact {
-    width: 768px;
-    padding-top: 206px;
-    padding-bottom: 140px;
-  }
-
-  .contact-inner {
-    width: 716px;
-    gap: 36px;
-  }
-
-  .desktop-section-contact .section-main-title {
-    width: 100%;
-    max-width: 1157px;
-  }
-
-  .desktop-section-contact .section-deco-title {
-    left: 0;
-    top: -22%;
-    transform: rotate(-13deg);
-    padding: 20px 40px 10px;
-  }
-
-  .desktop-section-contact .deco-title-text {
-    font-size: 40px;
-    line-height: 40px;
-  }
-
-  .desktop-section-contact .section-title-text {
-    font-size: 140px;
-    line-height: 140px;
-  }
-
-  .desktop-section-contact .sub-title-text {
-    font-size: 32px;
-  }
-
-  .desktop-section-contact .sub-text {
-    width: 100%;
-    max-width: 495px;
-  }
-
-  .desktop-section-contact .sub-text-content {
-    font-size: 14px;
-  }
-
-  .contact-tel {
-    width: 100%;
-    max-width: 771px;
-    padding: 25px 60px 20px;
-  }
-
-  .contact-tel-text {
-    font-size: 80px;
-    line-height: 45px;
-  }
+.line-svg {
+  position: absolute;
 }
+
+/* line-1
+   - hero 영역 .hero-title-text 하단에서 시작하여
+     시각적으로 about 영역 .section-deco-title 바로 위를 향하도록
+     흐름을 만들어주는 연결 장식 라인
+   - hero 섹션 좌상단 기준 x:254px, y:705px 부근
+*/
+.desktop-section-hero .line-1 {
+  left: 254px;
+  top: 705px;
+  width: 264px;
+  height: 730px;
+}
+
+/* line-2
+   - line-1의 끝 지점에서 자연스럽게 이어지는 보조 장식 라인
+   - hero 섹션 좌상단 기준 x:484px, y:1399px 부근
+*/
+.desktop-section-hero .line-2 {
+  left: 484px;
+  top: 1399px;
+  width: 46px;
+  height: 39px;
+}
+
+/* line-3
+   - about 섹션에 스크롤되었을 때 .sub-title-italic 문구를 강조하기 위해
+     텍스트 바로 아래를 가로로 그어주는 장식 라인
+   - Desktop 기준으로 .sub-title-italic 텍스트 하단에 위치하며,
+     about 섹션 좌상단 기준 x:418px, y:712px
+     (좌표는 참고값이며, 텍스트 기준으로 자연스럽게 보이도록 보정 허용)
+*/
+.desktop-section-about .line-3 {
+  left: 418px;
+  top: 712px;
+  width: 950px;
+  height: 15px;
+}
+
+/* line-4
+   - about 섹션에 스크롤되었을 때 .edu-title 텍스트를 감싸듯 강조하는 장식 라인
+   - Desktop 기준으로 about 섹션 좌상단에서 x:380px, y:907px 부근
+     (line-3 종료 지점 이후 자연스럽게 이어지도록 위치 보정 허용)
+*/
+.desktop-section-about .line-4 {
+  left: 380px;
+  top: 907px;
+  width: 253px;
+  height: 85px;
+}
+
+/* line-5
+   - about 섹션이 끝나갈 무렵, 다음 skill 섹션의 상단 중앙을 향해 시선을 유도하는 연결 장식 라인
+   - Desktop 기준으로 about 섹션 좌상단에서 x:851px, y:1163px 부근
+     (line-4와의 흐름이 끊기지 않도록 위치 보정 허용)
+*/
+.desktop-section-about .line-5 {
+  left: 851px;
+  top: 1163px;
+  width: 30px;
+  height: 250px;
+}
+
+/* line-6
+   - line-5의 끝 지점에서 이어지는 보조 장식 라인으로, 다음 섹션으로의 흐름을 마무리하는 역할
+   - Desktop 기준으로 about 섹션 좌상단에서 x:859px, y:1394px 부근
+     (line-5의 끝 위치에 맞춰 자연스럽게 이어지도록 위치 보정)
+*/
+.desktop-section-about .line-6 {
+  left: 859px;
+  top: 1394px;
+  width: 33px;
+  height: 29px;
+}
+
+/* line-7
+   - project 섹션 sub-title 아래를 가로지르는 장식 라인
+   - project 섹션 좌상단 기준 x:364.4px, y:787.6px 부근 (project 섹션 내부 기준)
+*/
+.desktop-section-project .line-7 {
+  left: 364.4px;
+  top: 787.6px;
+  width: 1014px;
+  height: 10px;
+}
+
