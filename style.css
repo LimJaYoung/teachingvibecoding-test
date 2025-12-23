@@ -225,20 +225,27 @@ a {
 /* ============================================
    hero section line SVG draw animation
    ============================================ */
-.desktop-section-hero .line-svg path {
-  transition: stroke-dashoffset 1.5s ease-out;
+@keyframes drawLine {
+  0% {
+    stroke-dashoffset: var(--path-length);
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
 }
 
 .desktop-section-hero .line-svg.line-1 path {
-  transition-delay: 0s;
+  animation: drawLine 1.5s ease-out forwards;
+  animation-play-state: paused;
 }
 
 .desktop-section-hero .line-svg.line-2 path {
-  transition-delay: 0.3s;
+  animation: drawLine 1.5s ease-out 0.3s forwards;
+  animation-play-state: paused;
 }
 
-.desktop-section-hero.is-active .line-svg path {
-  stroke-dashoffset: 0;
+.desktop-section-hero.motion .line-svg path {
+  animation-play-state: running;
 }
 
 /* ============================================
@@ -1326,7 +1333,7 @@ a {
      흐름을 만들어주는 연결 장식 라인
    - hero 섹션 좌상단 기준 x:254px, y:705px 부근
 */
-.desktop-section-hero .line-1 {
+.desktop-section-hero .line-svg.line-1 {
   left: 254px;
   top: 705px;
   width: 264px;
@@ -1337,7 +1344,7 @@ a {
    - line-1의 끝 지점에서 자연스럽게 이어지는 보조 장식 라인
    - hero 섹션 좌상단 기준 x:484px, y:1399px 부근
 */
-.desktop-section-hero .line-2 {
+.desktop-section-hero .line-svg.line-2 {
   left: 484px;
   top: 1399px;
   width: 46px;
