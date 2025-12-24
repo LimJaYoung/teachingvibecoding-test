@@ -1,6 +1,131 @@
 gsap.registerPlugin(ScrollTrigger);
 
-const heroSection = document.querySelector(".desktop-section-hero");
+// ============================================
+// hero-title-text 텍스트 효과 (스크롤 트리거)
+// ============================================
+const heroTitleLineWrappers = document.querySelectorAll('.hero-title-line-wrapper');
+
+// 미디어 쿼리 감지
+const mediaQuery1440 = window.matchMedia('(max-width: 1440px)');
+const mediaQuery1024 = window.matchMedia('(max-width: 1024px)');
+const mediaQuery768 = window.matchMedia('(max-width: 768px)');
+
+// 기본 애니메이션 (1440px 초과)
+let defaultAnimations = [];
+
+// 1440px 구간 애니메이션
+let animations1440 = [];
+
+// 1024px 구간 애니메이션
+let animations1024 = [];
+
+// 768px 구간 애니메이션
+let animations768 = [];
+
+function initAnimations() {
+  // 기존 애니메이션 제거
+  defaultAnimations.forEach(anim => {
+    if (anim && anim.scrollTrigger) {
+      anim.scrollTrigger.kill();
+    }
+    if (anim) anim.kill();
+  });
+  animations1440.forEach(anim => {
+    if (anim && anim.scrollTrigger) {
+      anim.scrollTrigger.kill();
+    }
+    if (anim) anim.kill();
+  });
+  animations1024.forEach(anim => {
+    if (anim && anim.scrollTrigger) {
+      anim.scrollTrigger.kill();
+    }
+    if (anim) anim.kill();
+  });
+  animations768.forEach(anim => {
+    if (anim && anim.scrollTrigger) {
+      anim.scrollTrigger.kill();
+    }
+    if (anim) anim.kill();
+  });
+  defaultAnimations = [];
+  animations1440 = [];
+  animations1024 = [];
+  animations768 = [];
+
+  heroTitleLineWrappers.forEach(wrapper => {
+    if (mediaQuery768.matches) {
+      // 768px 구간
+      const anim = gsap.to(wrapper, {
+        backgroundSize: '100%',
+        ease: 'none',
+        scrollTrigger: {
+          trigger: wrapper,
+          start: 'top 9%',
+          end: 'center',
+          scrub: true,
+          //markers: true,
+        },
+      });
+      animations768.push(anim);
+    } else if (mediaQuery1024.matches) {
+      // 1024px 구간
+      const anim = gsap.to(wrapper, {
+        backgroundSize: '100%',
+        ease: 'none',
+        scrollTrigger: {
+          trigger: wrapper,
+          start: 'top 10%',
+          end: 'center',
+          scrub: true,
+         markers: true,
+        },
+      });
+      animations1024.push(anim);
+    } else if (mediaQuery1440.matches) {
+      // 1440px 구간
+      const anim = gsap.to(wrapper, {
+        backgroundSize: '100%',
+        ease: 'none',
+        scrollTrigger: {
+          trigger: wrapper,
+          start: 'top 13%',
+          end: '100% 0%',
+          scrub: true,
+          //markers: true,
+        },
+      });
+      animations1440.push(anim);
+    } else {
+      // 기본 (1440px 초과)
+      const anim = gsap.to(wrapper, {
+        backgroundSize: '100%',
+        ease: 'none',
+        scrollTrigger: {
+          trigger: wrapper,
+          start: '0 22%',
+          end: 'center -1%',
+          scrub: true,
+          //markers: true,
+        },
+      });
+      defaultAnimations.push(anim);
+    }
+  });
+
+  ScrollTrigger.refresh();
+}
+
+// 초기 실행
+initAnimations();
+
+// 미디어 쿼리 변경 감지
+mediaQuery1440.addEventListener('change', initAnimations);
+mediaQuery1024.addEventListener('change', initAnimations);
+mediaQuery768.addEventListener('change', initAnimations);
+
+
+// line-svg animation
 const line1Path = document.querySelector(".line-svg.line-1 path");
 const line2Path = document.querySelector(".line-svg.line-2 path");
 

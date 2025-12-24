@@ -323,60 +323,19 @@
     transform: translateX(-50%) rotate(-3deg);
   }
 
-  /* line-1 (≤1440px) - hero 섹션 line 위치 조정용 */
-  .desktop-section-hero .line-svg.line-1 {
-    left: 209px;
-    top: 654px;
-    width: 264px;
-    height: 730px;
-  }
-
-  /* line-2 (≤1440px) - hero 섹션 line 위치 조정용 */
+  /* line-1, line-2 (≤1440px) - 숨김 처리 */
+  .desktop-section-hero .line-svg.line-1,
   .desktop-section-hero .line-svg.line-2 {
-    left: 446px;
-    top: 1357px;
-    width: 46px;
-    height: 39px;
+    display: none;
   }
 
-  /* line-3 (≤1440px) - about 섹션 line 위치 조정용 */
-  .desktop-section-about .line-3 {
-    left: 187px;
-    top: 712px;
-    width: 950px;
-    height: 15px;
-  }
-
-  /* line-4 (≤1440px) - about 섹션 line 위치 조정용 */
-  .desktop-section-about .line-4 {
-    left: 181px;
-    top: 900px;
-    width: 253px;
-    height: 85px;
-  }
-
-  /* line-5 (≤1440px) - about 섹션 line 위치 조정용 */
-  .desktop-section-about .line-5 {
-    left: 686px;
-    top: 1163px;
-    width: 30px;
-    height: 250px;
-  }
-
-  /* line-6 (≤1440px) - about 섹션 line 위치 조정용 */
-  .desktop-section-about .line-6 {
-    left: 695px;
-    top: 1394px;
-    width: 33px;
-    height: 29px;
-  }
-
-  /* line-7 (≤1440px) - project 섹션 line 위치 조정용 */
+  /* line-3, line-4, line-5, line-6, line-7 (≤1440px) - 숨김 처리 */
+  .desktop-section-about .line-3,
+  .desktop-section-about .line-4,
+  .desktop-section-about .line-5,
+  .desktop-section-about .line-6,
   .desktop-section-project .line-7 {
-    left: 6%;
-    top: 85%;
-    width: 84%;
-    height: 10px;
+    display: none;
   }
 
   /* desktop-section-project (≤1440px) */
@@ -860,8 +819,55 @@
     font-size: 12.6953vw;
     line-height: 1.2;
     letter-spacing: -9.1px;
-    color: var(--color-black);
-    white-space: pre-line;
+    color: rgba(0, 0, 0, 0.2);
+    white-space: normal;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, var(--color-black), var(--color-black)) no-repeat;
+    background-position: left center;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 0%;
+  }
+
+  .desktop-section-hero .hero-title-line-wrapper {
+    display: inline-block;
+    position: relative;
+    font-family: var(--font-martian-mono);
+    font-weight: 700;
+    font-size: 12.6953vw;
+    line-height: 1.2;
+    letter-spacing: -9.1px;
+    color: rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to right, var(--color-black), var(--color-black)) no-repeat;
+    background-position: left center;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 0%;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+  }
+
+  .desktop-section-hero .hero-title-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 102.5%;
+    height: 100%;
+    background-color: #FDCB2A;
+    color: #F94F46;
+    clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);
+    transform-origin: center;
+    transition: all cubic-bezier(.1,.5,.5,1) 0.4s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: var(--font-martian-mono);
+    font-weight: 700;
+    font-size: 12.6953vw;
+    line-height: 1.2;
+    letter-spacing: -9.1px;
     margin: 0;
     padding: 0;
   }
@@ -2236,8 +2242,55 @@
     font-size: 90px;
     line-height: 1.2;
     letter-spacing: -6.3px;
-    color: var(--color-black);
-    white-space: pre-line;
+    color: rgba(0, 0, 0, 0.2);
+    white-space: normal;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, var(--color-black), var(--color-black)) no-repeat;
+    background-position: left center;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 0%;
+  }
+
+  .desktop-section-hero .hero-title-line-wrapper {
+    display: inline-block;
+    position: relative;
+    font-family: var(--font-martian-mono);
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 1.2;
+    letter-spacing: -6.3px;
+    color: rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to right, var(--color-black), var(--color-black)) no-repeat;
+    background-position: left center;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 0%;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+  }
+
+  .desktop-section-hero .hero-title-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 102.5%;
+    height: 100%;
+    background-color: #FDCB2A;
+    color: #F94F46;
+    clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);
+    transform-origin: center;
+    transition: all cubic-bezier(.1,.5,.5,1) 0.4s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: var(--font-martian-mono);
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 1.2;
+    letter-spacing: -6.3px;
     margin: 0;
     padding: 0;
   }
