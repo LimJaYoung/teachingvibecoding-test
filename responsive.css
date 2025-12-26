@@ -63,7 +63,7 @@
     height: 85px;
   }
 
-  /* desktop-section-skill (≤1200px) */
+  /* desktop-section-skill (≤1650px) */
   .desktop-section-skill {
     width: 100%;
   }
@@ -96,23 +96,23 @@
 
   /* skill-icon 위치를 부모 프레임 중앙 기준으로 % 단위로 변경 */
   .desktop-section-skill .skill-icon-1 {
-    left: 12%;
+    left: 12.5%;
   }
 
   .desktop-section-skill .skill-icon-2 {
-    left: 88%;
+    left: 81.5%;
   }
 
   .desktop-section-skill .skill-icon-3 {
-    left: 18%;
+    left: 18.7%;
   }
 
   .desktop-section-skill .skill-icon-4 {
-    left: 85%;
+    left: 79.9%;
   }
 
   .desktop-section-skill .skill-icon-5 {
-    left: 10%;
+    left: 12.6%;
   }
 
   /* skill-text 위치를 부모 프레임 중앙 기준으로 % 단위로 변경 */
